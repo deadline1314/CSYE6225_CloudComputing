@@ -1,0 +1,5 @@
+package org.neu.ruotwang.courseservice1.resource;
+
+public class StudentResource {
+
+}

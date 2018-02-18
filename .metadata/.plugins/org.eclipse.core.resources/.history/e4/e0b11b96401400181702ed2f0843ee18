@@ -1,0 +1,8 @@
+package org.neu.ruotwang.courseservice1.resource;
+
+import javax.ws.rs.Path;
+
+@Path("/courses")
+public class CourseResource {
+
+}

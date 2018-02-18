@@ -1,0 +1,32 @@
+package org.neu.ruotwang.courseservice1.descriptor;
+
+import java.util.List;
+
+import org.neu.ruotwang.courseservice1.dao.Course;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class ProgramDescriptor {
+	
+	private String programName;
+	private List<Course> courseList;
+	
+	@JsonCreator
+	public ProgramDescriptor(
+			@JsonProperty("program_name") String programName,
+			@JsonProperty("course_list") List<Course> courseList) {
+		this.programName = programName;
+		this.courseList = courseList;
+	}
+	
+	@JsonProperty("program_name")
+	public String getProgramName() {
+		return programName;
+	}
+	
+	@JsonProperty("course_list")
+	public List<Course> getCourseList() {
+		return courseList;
+	}
+}

@@ -1,0 +1,29 @@
+package org.neu.ruotwang.courseservice1.tempstorage;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.neu.ruotwang.courseservice1.descriptor.CourseDescriptor;
+import org.neu.ruotwang.courseservice1.descriptor.ProgramDescriptor;
+import org.neu.ruotwang.courseservice1.descriptor.StudentDescriptor;
+
+public class TempStorage {
+	// --------<StudentId, StudentDescriptor>
+	private static Map<String, StudentDescriptor> STUDENT_TABLE = new HashMap<>();
+	// --------<CourseId, CourseDescriptor>
+	private static Map<String, CourseDescriptor> COURSE_TABLE = new HashMap<>();
+	// --------<ProgramId, ProgramDescriptor>
+	private static Map<String, ProgramDescriptor> PROGRAM_TABLE = new HashMap<>();
+	
+	public static Map<String, StudentDescriptor> getSTUDENT_TABLE() {
+		return STUDENT_TABLE;
+	}
+
+	public static Map<String, CourseDescriptor> getCOURSE_TABLE() {
+		return COURSE_TABLE;
+	}
+
+	public static Map<String, ProgramDescriptor> getPROGRAM_TABLE() {
+		return PROGRAM_TABLE;
+	}
+}
