@@ -13,6 +13,7 @@ import lombok.Data;
 public class StudentDescriptor {
 	
 	private String studentName;
+	private String studentEmail;
 	private String imagePath;
 	private List<String> courseIds;
 	private String programId;
@@ -24,10 +25,12 @@ public class StudentDescriptor {
 	@JsonCreator
 	public StudentDescriptor(
 			@JsonProperty("studentName") String studentName,
+			@JsonProperty("studentEmail") String studentEmail,
 			@JsonProperty("imagePath") String imagePath,
 			@JsonProperty("courseIds") List<String> courseIds,
 			@JsonProperty("programId") String programId) {
 		this.studentName = studentName;
+		this.studentEmail = studentEmail;
 		this.imagePath = imagePath;
 		this.courseIds = courseIds;
 		this.programId = programId;
@@ -36,6 +39,11 @@ public class StudentDescriptor {
 	@JsonProperty("studentName")
 	public String getStudentName() {
 		return studentName;
+	}
+	
+	@JsonProperty("studentEmail")
+	public String getStudentEmail() {
+		return studentEmail;
 	}
 	
 	@JsonProperty("imagePath")

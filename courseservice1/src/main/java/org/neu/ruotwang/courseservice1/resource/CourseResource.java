@@ -1,5 +1,7 @@
 package org.neu.ruotwang.courseservice1.resource;
 
+import java.util.Optional;
+
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -11,13 +13,21 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.neu.ruotwang.courseservice1.configuration.AWSSNSClient;
+import org.neu.ruotwang.courseservice1.dao.Course;
+import org.neu.ruotwang.courseservice1.dao.CourseDao;
 import org.neu.ruotwang.courseservice1.descriptor.CourseDescriptor;
-import org.neu.ruotwang.courseservice1.tempstorage.TempStorage;
+
+import com.amazonaws.services.sns.model.CreateTopicRequest;
+import com.amazonaws.services.sns.model.DeleteTopicRequest;
+// import org.neu.ruotwang.courseservice1.tempstorage.TempStorage;
+
 
 @Path("/courses")
 public class CourseResource {
 	
-	private TempStorage tempStorage = new TempStorage();
+	// private TempStorage tempStorage = new TempStorage();
+	private CourseDao courseDao = new CourseDao();
 	
 	/**
 	 * Retrieve all courses records
@@ -26,7 +36,7 @@ public class CourseResource {
 	@Path("")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getAllCourses() {
-		return Response.ok(tempStorage.getCOURSE_TABLE()).build();
+		return Response.ok(courseDao.getAll()).build();
 	}
 	
 	/**
@@ -36,8 +46,8 @@ public class CourseResource {
 	@Path("{courseId}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getCourse(@PathParam("courseId") String courseId) {
-		return Response.ok(tempStorage.getCOURSE_TABLE().get(courseId) == null ?
-        		"No record was found." : tempStorage.getCOURSE_TABLE().get(courseId)).build();
+		return Response.ok(courseDao.get(courseId).isPresent() ?
+        		 courseDao.get(courseId).get() : "No record was found.").build();
 	}
 	
 	/**
@@ -49,10 +59,15 @@ public class CourseResource {
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response createCourse(@PathParam("courseId") String courseId,
 			CourseDescriptor courseDescriptor) {
-		if(tempStorage.getCOURSE_TABLE().containsKey(courseId)) {
+		if(courseDao.get(courseId).isPresent()) {
 			return Response.ok(String.format("Course ID: s% already exists.", courseId)).build();
 		}
-		tempStorage.getCOURSE_TABLE().put(courseId, courseDescriptor);
+		
+		AWSSNSClient.getSNSClient().createTopic(new CreateTopicRequest(courseId));
+		
+		Course newCourse = mapFromCourseDescriptor(courseId, courseDescriptor);
+		newCourse.setSnsTopic(AWSSNSClient.SNS_TOPIC_PREFIX + courseId); 
+		courseDao.save(newCourse);
 		return Response.ok("Create new course succeed!").build();
 	}
 	
@@ -66,14 +81,28 @@ public class CourseResource {
 	public Response updateCourse(@PathParam("courseId") String courseId,
 			CourseDescriptor courseDescriptor) {
 		try {
-			if(!tempStorage.getCOURSE_TABLE().containsKey(courseId)) {
+			Optional<Course> exisitingCourse = courseDao.get(courseId);
+			if(!exisitingCourse.isPresent()) {
 				throw new RuntimeException(String.format("Course ID doesn't exist with ID: %s", courseId));
 			}
-			tempStorage.getCOURSE_TABLE().put(courseId, courseDescriptor);
+			Course newCourse = mapFromCourseDescriptor(courseId, courseDescriptor);
+			newCourse.setSnsTopic(AWSSNSClient.SNS_TOPIC_PREFIX + courseId); 
+			newCourse.setVersionNumber(exisitingCourse.get().getVersionNumber());
+			courseDao.save(newCourse);
 			return Response.ok("Update course succeed!").build();
 		} catch(RuntimeException ex) {
 			throw new RuntimeException("Internal Server Error", ex);
 		}
+	}
+	
+	private Course mapFromCourseDescriptor(String courseId, CourseDescriptor courseDescriptor) {
+		Course newCourse = new Course();
+		newCourse.setCourseId(courseId);
+		newCourse.setCourseName(courseDescriptor.getCourseName());
+		newCourse.setLectureList(courseDescriptor.getLectureList());
+		newCourse.setBoard(courseDescriptor.getBoard());
+		newCourse.setRoster(courseDescriptor.getRoster());
+		return newCourse;
 	}
 	
 	@DELETE
@@ -81,7 +110,13 @@ public class CourseResource {
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response deleteCourse(@PathParam("courseId") String courseId) {
-		tempStorage.getCOURSE_TABLE().remove(courseId);
+		Course courseToDelect = new Course();
+		courseToDelect.setCourseId(courseId);
+		courseDao.delete(courseToDelect);
+		
+		AWSSNSClient.getSNSClient().deleteTopic(new DeleteTopicRequest(
+				AWSSNSClient.SNS_TOPIC_PREFIX + courseId));
 		return Response.ok("Delete course succeed!").build();
 	}
+	
 }

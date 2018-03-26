@@ -23,11 +23,11 @@ public class TempStorage {
 	private static Map<String, ProgramDescriptor> PROGRAM_TABLE = new HashMap<>();
 	
 	public TempStorage() {
-		STUDENT_TABLE.put("001stu", new StudentDescriptor("ruotwang", "C:/xxx/xxx.img",
+		STUDENT_TABLE.put("001stu", new StudentDescriptor("ruotwang", "123@gmail.com", "C:/xxx/xxx.img",
 				Arrays.asList("001cs", "002cs"), "csye"));
 		COURSE_TABLE.put("001cs", new CourseDescriptor("cloud", Arrays.asList(new Lecture()),
 				new Board(), new Roster(), Arrays.asList("001stu")));
-		PROGRAM_TABLE.put("001is", new ProgramDescriptor("mis", Arrays.asList("001cs")));
+		PROGRAM_TABLE.put("001is", new ProgramDescriptor("mis"));
 	}
 	
 	public Map<String, StudentDescriptor> getSTUDENT_TABLE() {

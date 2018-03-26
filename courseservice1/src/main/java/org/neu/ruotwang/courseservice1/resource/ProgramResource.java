@@ -1,5 +1,7 @@
 package org.neu.ruotwang.courseservice1.resource;
 
+import java.util.Optional;
+
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -10,23 +12,16 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.neu.ruotwang.courseservice1.dao.Program;
+import org.neu.ruotwang.courseservice1.dao.ProgramDao;
 import org.neu.ruotwang.courseservice1.descriptor.ProgramDescriptor;
-import org.neu.ruotwang.courseservice1.tempstorage.TempStorage;
+// import org.neu.ruotwang.courseservice1.tempstorage.TempStorage;
 
 @Path("/programs")
 public class ProgramResource {
 	
-	private TempStorage tempStorage = new TempStorage();
-	
-	/**
-	 * Retrieve all programs records
-	 * */
-	@GET
-	@Path("")
-	@Produces(MediaType.APPLICATION_JSON)
-	public Response getAllPrograms() {
-		return Response.ok(tempStorage.getPROGRAM_TABLE()).build();
-	}
+	// private TempStorage tempStorage = new TempStorage();
+	private ProgramDao programDao = new ProgramDao();
 	
 	/**
 	 * Retrive a specific program record according to programId
@@ -35,8 +30,8 @@ public class ProgramResource {
 	@Path("{programId}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getProgram(@PathParam("{programId}") String programId) {
-		return Response.ok(tempStorage.getPROGRAM_TABLE().get(programId) == null ?
-        		"No record was found." : tempStorage.getPROGRAM_TABLE().get(programId)).build();
+		return Response.ok(programDao.get(programId).isPresent() ?
+        		programDao.get(programId).get() : "No record was found.").build();
 	}
 	
 	/**
@@ -48,10 +43,11 @@ public class ProgramResource {
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response createProgram(@PathParam("{programId}") String programId,
 			ProgramDescriptor programDescriptor) {
-		if(tempStorage.getPROGRAM_TABLE().containsKey(programId)) {
+		if(programDao.get(programId).isPresent()) {
 			return Response.ok(String.format("Program ID: s% already exists.", programId)).build();
 		}
-		tempStorage.getPROGRAM_TABLE().put(programId, programDescriptor);
+		Program newProgram = mapFromProgramDescriptor(programId, programDescriptor);
+		programDao.save(newProgram);
 		return Response.ok("Create new program succeed!").build();
 	}
 	
@@ -65,14 +61,24 @@ public class ProgramResource {
 	public Response updateProgram(@PathParam("{programId}") String programId,
 			ProgramDescriptor programDescriptor) {
 		try {
-			if(!tempStorage.getPROGRAM_TABLE().containsKey(programId)) {
+			Optional<Program> exisitingProgram = programDao.get(programId);
+			if(!exisitingProgram.isPresent()) {
 				throw new RuntimeException(String.format("Program ID doesn't exist with ID: %s", programId));
 			}
-			tempStorage.getPROGRAM_TABLE().put(programId, programDescriptor);
+			Program newProgram = mapFromProgramDescriptor(programId, programDescriptor);
+			newProgram.setVersionNumber(exisitingProgram.get().getVersionNumber());
+			programDao.save(newProgram);
 			return Response.ok("Update program succeed!").build();
 		} catch(RuntimeException ex) {
 			throw new RuntimeException("Internal Server Error", ex);
 		}
+	}
+	
+	private Program mapFromProgramDescriptor(String programId, ProgramDescriptor programDescriptor) {
+		Program newProgram = new Program();
+		newProgram.setProgramId(programId);
+		newProgram.setProgramName(programDescriptor.getProgramName());
+		return newProgram;
 	}
 	
 }

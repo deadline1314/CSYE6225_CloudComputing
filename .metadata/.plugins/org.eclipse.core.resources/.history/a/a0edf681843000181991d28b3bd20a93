@@ -1,0 +1,13 @@
+package org.neu.ruotwang.courseservice1.dao;
+
+import java.util.Optional;
+
+public class ProgramDao extends AbstractServiceDao<Program> {
+
+	@Override
+	public Optional<Program> get(String programId) throws RuntimeException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
