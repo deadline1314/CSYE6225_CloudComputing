@@ -28,8 +28,7 @@ public class DynamoDBExample {
 	 * @throws Exception
 	 */
 	private static void init() throws Exception { 
-		ProfileCredentialsProvider credentialsProvider = 
-					new ProfileCredentialsProvider();
+		ProfileCredentialsProvider credentialsProvider = new ProfileCredentialsProvider();
 		
 		credentialsProvider.getCredentials();
 		

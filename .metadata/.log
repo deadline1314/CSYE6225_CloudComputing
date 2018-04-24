@@ -2257,3 +2257,545 @@ Binding(ALT+SHIFT+D R,
 
 !ENTRY org.eclipse.jface.text 2 0 2018-03-25 14:43:14.744
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-04-06 18:44:38.473 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/ruotianwang/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/ruotianwang/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2018-04-06 18:44:52.911
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-06 18:44:52.911
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.php.ui.explorer,PHP Script Explorer,
+		Shows the Script Explorer,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3b6098fd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ce5013a,
+		[Parameter(org.eclipse.ui.views.showView.viewId,View,null,true), Parameter(org.eclipse.ui.views.showView.secondaryId,Secondary Id,null,true), Parameter(org.eclipse.ui.views.showView.makeFast,As FastView,null,true)],,true),[org.eclipse.core.commands.Parameterization@351c7030]),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-06 18:44:52.911
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4c219c84,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b01be54,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-06 18:44:52.911
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14997cb9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@701153c1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-06 18:44:57.614
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-06 18:45:00.177
+!MESSAGE Monitoring content of /Users/ruotianwang/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-06 18:45:00.472
+!MESSAGE AWS toolkit core plugin initialized after 2869 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-06 18:45:00.515
+!MESSAGE Found valid identity id cache us-east-1:2de3377e-9be8-4713-bb37-8a7af39b84fb
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-04-06 18:45:11.635
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-04-06 18:45:11.639
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-06 19:34:32.570
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-06 19:34:32.571
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:39:42.312
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda4990164810722636154.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:39:43.655
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda4990164810722636154.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:39:49.798
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:39:49.827
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:39:49.827
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:40:39.361
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda3713933852095658861.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:40:40.375
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda3713933852095658861.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:40:44.578
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:40:44.598
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:40:44.599
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:41:53.891
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda7607177305190836421.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:41:54.936
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda7607177305190836421.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:41:59.742
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:41:59.760
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:41:59.760
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:49:13.715
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda2889541935612368880.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:49:15.118
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda2889541935612368880.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:49:19.759
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:MyFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:49:19.778
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:49:19.780
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:MyFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:51:10.310
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda1528948931539338958.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:51:11.259
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda1528948931539338958.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:51:15.407
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:51:15.426
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 19:51:15.427
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-06 20:20:10.884
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-06 20:20:10.885
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:23:11.860
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda5344216708043993239.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:23:13.152
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda5344216708043993239.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:23:17.121
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:23:17.154
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:23:17.156
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:25:02.100
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda2684124079437420634.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:25:03.145
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda2684124079437420634.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:25:06.804
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:25:06.830
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:25:06.831
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:27:41.436
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda4260209190709883046.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:27:42.530
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda4260209190709883046.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:27:46.334
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:27:46.352
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:27:46.352
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:29:04.340
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda2070701165082002818.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:29:05.446
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda2070701165082002818.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:29:09.996
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:29:10.012
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:29:10.013
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:31:36.477
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda6231574606596120433.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:31:37.453
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda6231574606596120433.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:31:41.343
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:31:41.361
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:31:41.362
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY org.eclipse.recommenders.rcp 4 18 2018-04-06 20:35:38.159
+!MESSAGE Failed to resolve selection in ‘=courseservice1/src\/main\/java<org.neu.ruotwang.courseservice1.statemachine{CustomerServiceFunction.java’ at offset 435.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromTypeRootInEditor(JavaElementSelections.java:164)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:119)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:102)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.handleSelectionInEditor(JavaElementSelectionService.java:108)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.access$1(JavaElementSelectionService.java:105)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService$1.run(JavaElementSelectionService.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:41:31.996
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda6502447591320944890.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:41:33.175
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda6502447591320944890.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:41:37.866
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:41:37.887
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:41:37.888
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:44:56.207
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda5836246839872462831.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:44:57.353
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda5836246839872462831.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:45:01.402
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:45:01.424
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:45:01.425
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:51:41.481
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda2076025973853204442.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:51:42.898
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda2076025973853204442.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:51:47.321
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:51:47.351
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:51:47.351
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:53:19.690
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda1679937603764653118.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:53:20.771
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda1679937603764653118.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:53:25.012
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:53:25.032
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:53:25.034
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:58:42.948
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda6145978979069610320.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:58:43.997
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda6145978979069610320.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:58:48.238
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:58:48.255
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 20:58:48.256
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:08:43.286
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda6009433660081812449.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:08:44.380
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda6009433660081812449.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:08:48.251
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:08:48.272
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:08:48.272
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:15:23.789
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda7807574280656170198.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:15:24.854
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda7807574280656170198.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:15:28.539
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:15:28.557
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:15:28.558
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:31:58.839
+!MESSAGE Exporting project [courseservice1] to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda2418443186327003386.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:32:00.097
+!MESSAGE Project exported to /var/folders/fk/3hkp37qs3v36zrxb_stxjfc80000gn/T/courseservice1-lambda2418443186327003386.zip
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:32:03.991
+!MESSAGE Function arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction updated.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:32:04.016
+!MESSAGE Project metadata saved.
+
+!ENTRY com.amazonaws.eclipse.lambda 1 0 2018-04-06 21:32:04.016
+!MESSAGE Upload complete! Funtion arn arn:aws:lambda:us-west-2:954846963373:function:CustomerServiceFunction
+!SESSION 2018-04-07 12:37:12.840 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/ruotianwang/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/ruotianwang/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2018-04-07 12:37:24.177
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-07 12:37:24.178
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.php.ui.explorer,PHP Script Explorer,
+		Shows the Script Explorer,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b8f5aa4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7d0e46dd,
+		[Parameter(org.eclipse.ui.views.showView.viewId,View,null,true), Parameter(org.eclipse.ui.views.showView.secondaryId,Secondary Id,null,true), Parameter(org.eclipse.ui.views.showView.makeFast,As FastView,null,true)],,true),[org.eclipse.core.commands.Parameterization@351c7030]),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-07 12:37:24.178
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@318353,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2cd6fae8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-07 12:37:24.178
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7d5ddfac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@72ea5674,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-07 12:37:33.964
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-07 12:37:36.755
+!MESSAGE Monitoring content of /Users/ruotianwang/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-07 12:37:36.991
+!MESSAGE AWS toolkit core plugin initialized after 3032 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-07 12:37:37.015
+!MESSAGE Found valid identity id cache us-east-1:2de3377e-9be8-4713-bb37-8a7af39b84fb
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-07 15:15:50.729
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-07 15:15:50.733
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-04-13 18:14:08.158 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/ruotianwang/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/ruotianwang/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2018-04-13 18:14:19.088
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-13 18:14:19.088
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c8859b4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56897de0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-13 18:14:19.088
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@40874f54,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2bc21edd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-13 18:14:19.088
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.php.ui.explorer,PHP Script Explorer,
+		Shows the Script Explorer,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3599b7e8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2862bac6,
+		[Parameter(org.eclipse.ui.views.showView.viewId,View,null,true), Parameter(org.eclipse.ui.views.showView.secondaryId,Secondary Id,null,true), Parameter(org.eclipse.ui.views.showView.makeFast,As FastView,null,true)],,true),[org.eclipse.core.commands.Parameterization@351c7030]),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-13 18:14:28.968
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-13 18:14:32.324
+!MESSAGE Monitoring content of /Users/ruotianwang/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-13 18:14:32.637
+!MESSAGE AWS toolkit core plugin initialized after 3669 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-04-13 18:14:32.700
+!MESSAGE Found valid identity id cache us-east-1:2de3377e-9be8-4713-bb37-8a7af39b84fb

@@ -1,5 +1,0 @@
-package org.neu.ruotwang.courseservice1.configuration;
-
-public class AWSSNSClient {
-
-}
